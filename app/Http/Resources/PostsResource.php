@@ -22,7 +22,7 @@ class PostsResource extends Resource
             'contenu'       =>$this->body,
             'description'   =>$this->excerpt,
             'extrait'       =>str_limit($this->excerpt,400),
-            'image'         =>asset('storage/'.$this->image),
+            'image'         =>secure_asset('storage/'.$this->image),
             'dateCreation'  =>$this->created_at
         ];
     }

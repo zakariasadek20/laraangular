@@ -19,7 +19,7 @@ class SlidersResource extends Resource
             'titre'=>$this->title,
             'description'=>$this->description,
             'contenu'=>$this->body,
-            'image'=>asset('storage/'.$this->image),
+            'image'=>secure_asset('storage/'.$this->image),
             'dateCreation'=>$this->created_at
         ];
     }

@@ -21,7 +21,7 @@ class ServicesResource extends Resource
             'slug'=>$this->slug,
             'contenu'=>$this->body,
             'extrait'=>str_limit($this->description,80) ,
-            'image'=>asset('storage/'.$this->image),
+            'image'=>secure_asset('storage/'.$this->image),
             'dateCreation'=>$this->created_at
         ];
     }
