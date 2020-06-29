@@ -15,22 +15,22 @@
 
   <div id="navMenuColorwarning-example" class="navbar-menu" style="font-family: 'Comfortaa',serif;font-size: 1em;font-weight: bold;color: #48487f;">
     <div class="navbar-start">
-      <a class="navbar-item" href="{{secure_asset('/')}}">
+      <a class="navbar-item" href="{{secure_url('/')}}">
         Accueil
       </a>
 
-       <a class="navbar-item" href="{{secure_asset('/services')}}">
+       <a class="navbar-item" href="{{secure_url('/services')}}">
         Services
       </a>
 
-       <a class="navbar-item" href="{{secure_asset('/about')}}">
+       <a class="navbar-item" href="{{secure_url('/about')}}">
         A propos
       </a>
      
-      <a class="navbar-item" href="{{secure_asset('/blog')}}">
+      <a class="navbar-item" href="{{secure_url('/blog')}}">
         Blog
       </a>
-       <a class="navbar-item" href="{{secure_asset('/contact')}}">
+       <a class="navbar-item" href="{{secure_url('/contact')}}">
         Contactez nous
       </a>
     </div>
