@@ -33,7 +33,7 @@
 					  <div class="card-image">
 					    <figure class="image is-16by9">
 					    	<a href="{{url('/services/'.$service->slug)}}">
-					      <img src="{{asset('/storage/'.$service->image)}}" alt="Placeholder image" >
+					      <img src="{{secure_asset('/storage/'.$service->image)}}" alt="Placeholder image" >
 					      </a>
 					    </figure>
 					  </div>

@@ -7,7 +7,7 @@
 	@section('content')
 	@foreach($slides as $slide)
 	  <div class="mySlides w3-display-container w3-center">
-    	 <img src="{{asset('/storage/'.$slide->image)}}" style="width:100%; height: 600px" />
+    	 <img src="{{secure_asset('/storage/'.$slide->image)}}" style="width:100%; height: 600px" />
    		 <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
       		 <h3>{{$slide->title}}</h3>
       	 	<p><b>{{$slide->description}}</b></p>   
@@ -31,7 +31,7 @@
 					  <div class="card-image">
 					    <figure class="image is-16by9">
 					    	<a href="{{url('/services/'.$service->slug)}}">
-					      <img src="{{asset('/storage/'.$service->image)}}" alt="Placeholder image" >
+					      <img src="{{secure_asset('/storage/'.$service->image)}}" alt="Placeholder image" >
 					      </a>
 					    </figure>
 					  </div>
@@ -72,7 +72,7 @@
 					  <div class="card-image">
 					    <figure class="image is-16by9">
 					    	<a href="{{url('/blog/'.$post->slug)}}">
-					      <img src="{{asset('/storage/'.$post->image)}}" alt="Placeholder image" >
+					      <img src="{{secure_asset('/storage/'.$post->image)}}" alt="Placeholder image" >
 					      </a>
 					    </figure>
 					  </div>
@@ -127,7 +127,7 @@ function carousel() {
 
 	@section('stylesheets')
 	<!-- <link rel="stylesheet"
-	 href="{{asset('css/bulma-carousel.min.css')}}"> -->
+	 href="{{secure_asset('css/bulma-carousel.min.css')}}"> -->
 	 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	 <link rel="stylesheet" href="{{secure_asset('css/bulma-divider.min.css')}}">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
@@ -136,6 +136,6 @@ function carousel() {
 
 	@section('javascripts')
 	<script 
-	 src="{{asset('js/bulma-carousel.min.js')}}"></script>
+	 src="{{secure_asset('js/bulma-carousel.min.js')}}"></script>
 	@endsection
 

@@ -28,7 +28,7 @@
 		<div class="columns">
 			<div class="column is-marginless">
 			<figure class="image is-4by3">
-				<img src="{{asset('/storage/'.$post->image)}}">
+				<img src="{{secure_asset('/storage/'.$post->image)}}">
 			</figure>
 				<p>
 					{!! $post->body !!}

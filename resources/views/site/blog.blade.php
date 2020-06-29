@@ -55,7 +55,7 @@
 					  <div class="card-image">
 					    <figure class="image is-16by9">
 					    	<a href="{{url('/blog/'.$post->slug)}}">
-					      <img src="{{asset('/storage/'.$post->image)}}" alt="{{$post->title}}" >
+					      <img src="{{secure_asset('/storage/'.$post->image)}}" alt="{{$post->title}}" >
 					      </a>
 					    </figure>
 					  </div>

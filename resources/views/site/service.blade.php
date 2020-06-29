@@ -28,7 +28,7 @@
 		<div class="columns">
 			<div class="column is-marginless">
 			<figure class="image is-4by3">
-				<img src="{{asset('/storage/'.$service->image)}}">
+				<img src="{{secure_asset('/storage/'.$service->image)}}">
 			</figure>
 				<p>
 					{!! $service->body !!}
